@@ -37,6 +37,14 @@ function Form({ addIncome, addExpense, transactionToEdit }) {
     }
   }, [transactionToEdit]);
 
+  const resetForm = () => {
+    setTransactionType("Expense");
+    setCategory("");
+    setAmount("");
+    setDate("");
+    setIsAdd(true);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTransaction = {
@@ -51,6 +59,8 @@ function Form({ addIncome, addExpense, transactionToEdit }) {
     } else {
       addExpense(newTransaction, isAdd);
     }
+
+    resetForm();
   };
 
   const handleTransactionTypeChange = (type) => {
