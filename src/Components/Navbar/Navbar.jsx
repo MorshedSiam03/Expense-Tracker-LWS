@@ -6,7 +6,7 @@ function Navbar() {
       <nav>
         <div className="flex max-w-7xl items-center bg-[#F9FAFB] w-full justify-between py-1 mt-2 border px-4 rounded-md mx-auto">
           <div>
-            <img src="/src/assets/favicon.svg" className="h-14" />
+            <img src="https://raw.githubusercontent.com/MorshedSiam03/Expense-Tracker-LWS/400ac5d0190b68629cf6090a36da7f4a0db15bfc/src/assets/favicon.svg" className="h-14" />
           </div>
 
           <div className="hidden md:block">
